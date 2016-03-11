@@ -1,0 +1,10 @@
+.primary    { color:#0e0e0e; }
+.subtle     { color:#b3b3b3; }
+
+.bold       { font-weight: 600; }
+.normal     { font-weight: 400; }
+.light      { font-weight: 400; }
+
+.small      { font-size: 0.8rem; }
+.medium     { font-size: 1rem; }
+.large      { font-size: 1.2rem; }

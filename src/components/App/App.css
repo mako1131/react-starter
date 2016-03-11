@@ -1,0 +1,10 @@
+.normal {
+    background: blue;
+}
+.disabled {
+    background: lightgray;
+}
+.danger {
+    composes: bold from "../shared/layout.css";
+    background: red;
+}
