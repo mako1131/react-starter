@@ -1,9 +1,9 @@
 import React from 'react'
 import className from 'classnames';
 
-import styles from './App.css';
-
-console.log(styles)
+import styles from './App.scss';
+import colors from '../shared/colors.scss'
+import Button from '../Button/Button.jsx'
 
 export default React.createClass({
     render(){
@@ -11,7 +11,12 @@ export default React.createClass({
         return(
             <div>
                 <h1>Test2</h1>
-                <button className={buttonClassName}>I AM BUTTON </button>
+                <Button text="Mako" className="btn-red"/>
+                <Button text="Ahoj" className="btn-blue"/>
+                <Button text="Toto je super" className="btn-purple"/>
+                <Button text="Dansko a fuinsko" className="btn btn-inline"/>
+                <Button className="btn-green"/>
+                <Button text="krvavy danger" className="btn-red"/>
             </div>
         )
     }

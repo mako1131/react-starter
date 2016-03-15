@@ -1,0 +1,12 @@
+@import "../shared/colors.scss";
+
+.normal {
+    background: $blue;
+}
+.disabled {
+    background: $lightgray;
+}
+.danger {
+    //composes: bold from "../shared/layout.scss";
+    background: $red;
+}

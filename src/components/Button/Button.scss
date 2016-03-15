@@ -1,0 +1,41 @@
+@import '../shared/colors.scss';
+
+.btn{
+    padding: .8rem 1rem;
+    border: none;
+    color: $fontColor;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem .5rem;
+    background: $mediumgray;
+    width: 100%;
+    &:hover{background: darken($mediumgray, 5%);}
+}
+
+.btn-inline{
+    width: auto;
+}
+
+.btn-red{
+    composes: btn;
+    background: $red;
+    &:hover{background: darken($red, 5%);}
+}
+
+.btn-green{
+    composes: btn;
+    background: $green;
+    &:hover{background: darken($green, 5%);}
+}
+
+.btn-blue{
+    composes: btn;
+    background: $blue;
+    &:hover{background: darken($blue, 5%);}
+}
+
+.btn-purple{
+    composes: btn;
+    background: $purple;
+    &:hover{background: darken($purple, 5%);}
+}

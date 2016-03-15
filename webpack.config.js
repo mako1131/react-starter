@@ -32,7 +32,17 @@ module.exports = {
                 exclude: '/node_modules/',
                 loaders: ['style-loader','css-loader?modules', 'postcss-loader'],
                 include: path.join(__dirname, 'src')
-            }
+            },
+            {
+              test: /\.scss$/,
+              loaders: [ 'style?sourceMap', 'css-loader?modules', 'sass-loader'],
+              exclude: 'node_modules',
+              include: path.join(__dirname, 'src')
+          },
+          {
+               test   : /\.(ttf|otf|eot|svg|woff(2))(\?[a-z0-9]+)?$/,
+               loader : 'file-loader'
+           }
         ]
     },
     plugins:[
