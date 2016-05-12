@@ -1,19 +1,27 @@
 @import '../shared/colors.scss';
 
 .btn{
-    padding: .8rem 1rem;
+    composes: uppercase from '../shared/font.css';
+    padding: 1rem 2rem;
     border: none;
     color: $fontColor;
     border-radius: 4px;
     cursor: pointer;
-    margin: 1rem .5rem;
+    // margin: 1rem .5rem;
     background: $mediumgray;
     width: 100%;
     &:hover{background: darken($mediumgray, 5%);}
+    font-size: 1rem;
 }
 
 .btn-inline{
+    composes: btn;
     width: auto;
+}
+
+.btn-rounded{
+    composes: btn;
+    border-radius: 2rem;
 }
 
 .btn-red{

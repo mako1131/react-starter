@@ -1,0 +1,79 @@
+@import '../shared/colors.scss';
+
+$tooltipcolor: $blue;
+// Tooltip Styles
+.tooltip {
+	display: inline;
+    position: relative;
+    color: $tooltipcolor;
+	//@include perspective(500px);
+	perspective: 500px;
+
+	&:hover {
+		cursor: pointer;
+
+		.tooltip__content {
+			//@include transform( translate3d(-50%,-10%,0) );
+			opacity: 1;
+			pointer-events: auto;
+		}
+	}
+
+	&__content {
+		//@include transition( all 200ms ease );
+		transition: all 200ms ease;
+		//@include transform( translate3d(-50%,0%,0) );
+		transform: translate3d(-50%, 0%, 0);
+		//@include transform-origin( 0 10px );
+		transform-origin: 0 10px;
+
+		background-color: $tooltipcolor;
+		border-radius: 4px;
+		color: white;
+		display: block;
+		font-size: 14px;
+		font-weight: normal;
+		left: 50%;
+		opacity: 0;
+		padding: 10px 20px;
+		pointer-events: none;
+		position: absolute;
+		text-align: left;
+		bottom: 200%;
+		box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+
+		&:before {
+			border-color: transparent;
+			border-top-color: $tooltipcolor;
+			border-style: solid;
+			border-width: 10px;
+			content: ' ';
+			display: block;
+			height: 0;
+			left: 50%;
+			margin-left: -10px;
+			position: absolute;
+			bottom: -20px;
+			width: 0;
+		}// .tooltip__content:after
+
+		&:after {
+			content: ' ';
+			display: block;
+			position: absolute;
+			bottom: -20px;
+			left: 0;
+			width: 100%;
+			height: 20px;
+		}
+
+		&:hover {
+			//@include transform( rotateX(0deg) translate3d(-50%,-10%,0) );
+			transform: rotateX(0deg) translate3d(-50%, 0%, 0);
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+	}// .tooltip__content
+
+}// .tooltip
