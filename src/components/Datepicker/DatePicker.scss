@@ -1,0 +1,20 @@
+@import '../shared/colors.scss';
+
+.datepicker{
+    display:flex;
+    flex-wrap: wrap;
+    max-width:400px;
+    composes: panel from '../Panel/Panel.scss';
+
+}
+
+.day{
+    flex: 1 0 auto;
+    flex-basis: 14.28%;
+    max-width: 100%;
+    padding:.5rem;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}

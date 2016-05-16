@@ -5,6 +5,7 @@ import colors from '../shared/colors.scss'
 import Button from '../Button/Button.jsx'
 import Tooltip from '../Tooltip/Tooltip.jsx'
 import Panel from '../Panel/Panel.jsx'
+import DatePicker from '../DatePicker/DatePicker.jsx'
 // import {Container, Row, Col} from '../Grid/Grid.jsx'
 
 export default React.createClass({
@@ -140,7 +141,7 @@ export default React.createClass({
 
                     <div className="row">
                         <div className="col col-1-1">
-                            tst
+                            <DatePicker />
                         </div>
                     </div>
                 </div>
